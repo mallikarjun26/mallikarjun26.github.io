@@ -42,76 +42,110 @@
     <div class="container">
 
         <div class="row">
-            <div class=col-md-10>
-
-                <!-- Research Projects -->
-                <h2>Research Projects</h2><hr>
-                    
-                <!-- Face Fiducial Detection -->
-                <h4>Face Fiducial Detection</h4>
-                <p>Description</p>
-                <!-- Face Fiducial Detection -->
-
-                <!-- Efficient Face Frontalization in Unconstrained Images -->
-                <h4>Efficient Face Frontalization in Unconstrained Images</h4>
-                <p>Description</p>
-                <!-- Efficient Face Frontalization in Unconstrained Images -->
-
-                <!-- Face Video Synthesis -->
-                <h4>Face Video Synthesis</h4>
-                <p>Description</p>
-                <!-- Face Video Synthesis -->
-
-                <!-- Research Projects -->
-
-                <!-- Course Projects -->
-                <h2>Course Projects</h2> <hr>
-
-                <!-- Sign Language Detection -->
-                <h4></h4>
-                <p>Description</p>
-                <!-- Sign Language Detection -->
-
-                <!-- Document Layout Analysis -->
-                <h4>Document Layout Analysis</h4>
-                <p>Description</p>
-                <!-- Document Layout Analysis -->
-
-                <!-- Lead Character Recognition in a Movie -->
-                <h4>Lead Character Recognition in a Movie</h4>
-                <p>Description</p>
-                <!-- Lead Character Recognition in a Movie -->
-
-                <!-- Search Engine for Wikipedia -->
-                <h4>Search Engine for Wikipedia</h4>
-                <p>Description</p>
-                <!-- Search Engine for Wikipedia -->
-
-                <!-- Twitter Entity Disambiguation -->
-                <h4>Twitter Entity Disambiguation</h4>
-                <p>Description</p>
-                <!-- Twitter Entity Disambiguation -->
-
-                <!-- Path Planning for 3 Link Manipulator using Rapidly Exploring Random Tree -->
-                <h4>Path Planning for 3 Link Manipulator using Rapidly Exploring Random Tree</h4>
-                <p>Description</p>
-                <!-- Path Planning for 3 Link Manipulator using Rapidly Exploring Random Tree -->
-
-                <!-- Course Projects -->
+            
+            <!-- Research Projects -->
+            <h2>Research Projects</h2><hr>
                 
-                <!-- Bachelors Projects -->
-                <h2>Bachelors Project</h2> <hr>
+            <!-- Face Fiducial Detection -->
+            <h3>Face Fiducial Detection</h3>
 
-                <!-- Mobile controlled robot -->
-                <h4>Mobile controlled robot</h4>
-                <p>Description</p>
-                <!-- Mobile controlled robot -->
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        Facial fial detection is a challenging problem for several reasons like varying pose, appearance, expression, partial occlusion and others. In the past, several approaches like mixture of trees , regression based methods, exemplar based methods have been proposed to tackle this challenge. In this paper, we propose an exemplar based approach to select the best solution from among outputs of regression and mixture of trees based algorithms (which we call candidate algorithms). We show that by using a very simple SIFT and HOG based descriptor, it is possible to identify the most accurate fiducial outputs from a set of results produced by candidate algorithms on any given test image. Our approach manifests as two algorithms, one based on optimizing an objective function with quadratic terms and the other based on simple kNN. Both algorithms take as input fiducial locations produced by running state-of-the-art candidate algorithms on an input image, and output accurate fiducials using a set of automatically selected exemplar images with annotations. Our surprising result is that in this case, a simple algorithm like kNN is able to take advantage of the seemingly huge complementarity of these candidate algorithms, better than optimization based algorithms. We do extensive experiments on several datasets, and show that our approach outperforms state-of-the-art consistently. In some cases, we report as much as a 10% improvement in accuracy. We also extensively analyze each component of our approach, to illustrate its efficacy.
+                    </p>
+                    <small>
+                        <a href="">[Project Page]</a>
+                        <a href="">[PDF]</a>
+                        <a href="">[Code]</a>
+                    </small>
+                </div>
+                <div class="col-md-4">
+                    <img src="figures/face_fid_image.png" height="250" width="260">
+                </div>
+            </div>
+            <!-- Face Fiducial Detection -->
 
-                <!-- Bachelors Projects -->
+            <!-- Efficient Face Frontalization in Unconstrained Images -->
+            <h3>Efficient Face Frontalization in Unconstrained Images</h3>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        Face frontalization is the process of synthesizing a frontal view of a face, given its non-frontal view. Frontalization is used in intelligent photo editing tools and also aids in improving the accuracy of face recognition systems. For example, in the case of photo editing, faces of persons in a group photo can be corrected to look into the camera, if they are looking elsewhere. Similarly, even though recent methods in face recognition claim accuracy which surpasses that of humans in some cases, performance of recognition systems degrade when profile view of faces are given as input. One way to address this issue is to synthesize frontal views of faces before recognition.
+                        We propose a simple and efficient method to address the face frontalization problem. Our method leverages the fact that faces in general have a definite structure and can be represented in a low dimensional subspace. We employ an exemplar based approach to find the transformation that relates the profile view to the frontal view, and use it to generate realistic frontalizations. Our method does not involve estimating 3D model of the face, which is a common approach in previous work in this area. This leads to an efficient solution, since we avoid the complexity of adding one more dimension to the problem. Our method also retains the structural information of the individual as compared to that of a recent method [4], which assumes a generic 3D model for synthesis. We show impressive qualitative and quantitative results in comparison to the state-of-the-art in this field.
+                    </p>
+                    <small>
+                        PDF
+                    </small>
+                </div>
 
-                <hr>
+                <div class="col-md-4">
+                    <img src="figures/face_front.png" height="150" width="260">
+                </div>
+            </div>
+            <!-- Efficient Face Frontalization in Unconstrained Images -->
 
-            <div>
+            <!-- Face Video Synthesis -->
+            <h3>Face Video Synthesis</h3>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+            <!-- Face Video Synthesis -->
+
+            <!-- Research Projects -->
+
+            <!-- Course Projects -->
+            <h2>Course Projects</h2> <hr>
+
+            <!-- Sign Language Detection -->
+            <h3>Sign Language Detection</h3>
+            <p>Description</p>
+            <!-- Sign Language Detection -->
+
+            <!-- Document Layout Analysis -->
+            <h3>Document Layout Analysis</h3>
+            <p>Description</p>
+            <!-- Document Layout Analysis -->
+
+            <!-- Lead Character Recognition in a Movie -->
+            <h3>Lead Character Recognition in a Movie</h3>
+            <p>Description</p>
+            <!-- Lead Character Recognition in a Movie -->
+
+            <!-- Search Engine for Wikipedia -->
+            <h3>Search Engine for Wikipedia</h3>
+            <p>Description</p>
+            <!-- Search Engine for Wikipedia -->
+
+            <!-- Twitter Entity Disambiguation -->
+            <h3>Twitter Entity Disambiguation</h3>
+            <p>Description</p>
+            <!-- Twitter Entity Disambiguation -->
+
+            <!-- Path Planning for 3 Link Manipulator using Rapidly Exploring Random Tree -->
+            <h3>Path Planning for 3 Link Manipulator using Rapidly Exploring Random Tree</h3>
+            <p>Description</p>
+            <!-- Path Planning for 3 Link Manipulator using Rapidly Exploring Random Tree -->
+
+            <!-- Course Projects -->
+            
+            <!-- Bachelors Projects -->
+            <h2>Bachelors Project</h2> <hr>
+
+            <!-- Mobile controlled robot -->
+            <h3>Mobile controlled robot</h3>
+            <p>Description</p>
+            <!-- Mobile controlled robot -->
+
+            <!-- Bachelors Projects -->
+
+            <hr>
+
         <div>
 
         <hr>
