@@ -55,13 +55,15 @@
                         Facial fial detection is a challenging problem for several reasons like varying pose, appearance, expression, partial occlusion and others. In the past, several approaches like mixture of trees , regression based methods, exemplar based methods have been proposed to tackle this challenge. In this paper, we propose an exemplar based approach to select the best solution from among outputs of regression and mixture of trees based algorithms (which we call candidate algorithms). We show that by using a very simple SIFT and HOG based descriptor, it is possible to identify the most accurate fiducial outputs from a set of results produced by candidate algorithms on any given test image. Our approach manifests as two algorithms, one based on optimizing an objective function with quadratic terms and the other based on simple kNN. Both algorithms take as input fiducial locations produced by running state-of-the-art candidate algorithms on an input image, and output accurate fiducials using a set of automatically selected exemplar images with annotations. Our surprising result is that in this case, a simple algorithm like kNN is able to take advantage of the seemingly huge complementarity of these candidate algorithms, better than optimization based algorithms. We do extensive experiments on several datasets, and show that our approach outperforms state-of-the-art consistently. In some cases, we report as much as a 10% improvement in accuracy. We also extensively analyze each component of our approach, to illustrate its efficacy.
                     </p>
                     <small>
-                        <a href="">[Project Page]</a>
-                        <a href="">[PDF]</a>
-                        <a href="">[Code]</a>
+                        <a href="https://cvit.iiit.ac.in/research/projects/cvit-projects/face-fiducial-detection-by-consensus-of-exemplars">[Project Page]</a>
+                        <a href="https://cvit.iiit.ac.in/images/Projects/Fiducialexemplar/wacv_fiducial.pdf">[PDF]</a>
+                        <a href="https://bitbucket.org/mallikarjun26/wacv_2016_face_fiducial">[Code]</a>
                     </small>
                 </div>
                 <div class="col-md-4">
-                    <img src="figures/face_fid_image.png" height="250" width="260">
+                    <center>
+                        <img src="figures/face_fid_image.png" height="250" width="290">
+                    </center>
                 </div>
             </div>
             <!-- Face Fiducial Detection -->
@@ -75,12 +77,19 @@
                         We propose a simple and efficient method to address the face frontalization problem. Our method leverages the fact that faces in general have a definite structure and can be represented in a low dimensional subspace. We employ an exemplar based approach to find the transformation that relates the profile view to the frontal view, and use it to generate realistic frontalizations. Our method does not involve estimating 3D model of the face, which is a common approach in previous work in this area. This leads to an efficient solution, since we avoid the complexity of adding one more dimension to the problem. Our method also retains the structural information of the individual as compared to that of a recent method [4], which assumes a generic 3D model for synthesis. We show impressive qualitative and quantitative results in comparison to the state-of-the-art in this field.
                     </p>
                     <small>
-                        PDF
+                        <a href="https://researchweb.iiit.ac.in/~mallikarjun.br/data/frontalization_2015.pdf">[PDF]</a>
+                        <a href="">[Code]</a>
                     </small>
                 </div>
 
                 <div class="col-md-4">
-                    <img src="figures/face_front.png" height="150" width="260">
+                    <center>
+                        <img src="figures/face_front.png" height="100" width="180">
+                        <video width="320" height="240" controls>
+                            <source src="figures/face_front_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </center>
                 </div>
             </div>
             <!-- Efficient Face Frontalization in Unconstrained Images -->
@@ -90,9 +99,19 @@
             <div class="row">
                 <div class="col-md-8">
                     <p>
+                        Consider face space of a particular individual. Assume it contains all possible variations in pose and expression dimensions. This project looks at the possibility of synthesizing novel videos which would have the person changing his expression and pose in smooth transition. We created a dataset of 10,000 images of Jack Nicholson's faces extracted from <i>As Good As it Gets</i> movie. Face space is represented as a network of nodes and edges representing face and properties respectievely. Property defining edge between two faces would include appearance features like SIFT and HoG and structural features like the locations of facial landmarks. Given this network, we explored various type of traversals to synthesize novel videos.
+                        Second part of the project looked at the possibility of factorizing a given face into individual and expression components. Also, could the non-individual component be transferred to another individual's face to synthesize a new image which imitates the former's expression. Aligned face images of the individual are stacked to form a 3D tensor. Given a 2D slice from the tensor across all the images, we expect there exists correlation among the features across all the faces. We extract Eigen vectors of matrices for all the 2D slices. Similar procedure is followed for the other individual as well. Given a face of the first individual, we take the components across the Eigen vectors and use to synthesize a new image of second individual using his Eigen vectors.
                     </p>
+                    <small>
+                        <a href="">[Project Page]</a>
+                        <a href="">[PDF]</a>
+                        <a href="">[Code]</a>
+                    </small>
                 </div>
                 <div class="col-md-4">
+                    <center>
+                        <img src="figures/face_front.png" height="150" width="260">
+                    </center>
                 </div>
             </div>
             <!-- Face Video Synthesis -->
@@ -104,32 +123,115 @@
 
             <!-- Sign Language Detection -->
             <h3>Sign Language Detection</h3>
-            <p>Description</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        English characters can be represented as sign using hand gestures. This project aims at classifying the signs represented in a static image using Convolutional Neural Networks. Dataset consisted of 700 train images and 300 test images. Experimentation involved varying filter size, adding augmented data (which includes rotation, translation, horizontal flip and noise), feauture representation (in the form of RGB, YUV and canny transformed image), various architectures (which includes depth, number of feature maps, Stochastic and Batch Gradient descent and Dropout.<br>
+                    </p>
+                    <p>
+                        Results were compared to that of <i>Bag of Visual Words</i> model. 600 visual words were used to build the histogram representation of each image. SVM was used as classifier. This model achieved an accuracy of 25.32% as compared to that of CNN which out performed with an accuracy of 63% with the best performing parameters. We observed that the data augmentation played a crucial role in improving the accuracy of the system significantly.                      
+                    </p>
+                    <small>
+                        <a href="https://github.com/mallikarjun26/SignLanguageRecognitionCNN">[Code]</a>
+                    </small>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="figures/sign_lang.png" height="150" width="260">
+                    </center>
+                </div>
+            </div>
             <!-- Sign Language Detection -->
 
             <!-- Document Layout Analysis -->
             <h3>Document Layout Analysis</h3>
-            <p>Description</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        Documents consists of various components, such as headings, text content, tabels, images and graphs. This project aims to automatically classify each of the above components for tagging. In this project we consider IEEE standard techinical documents in image format. Image is categorized in to multiple components by employing morphological processes such as dilation with suitable structural elements. And each connected component is treated as individual component. Each of this component is assigned a score based on location, statistical measure of connected components with in the boundary, number of parallel lines based on hough transform. Based on the above scores each of the component is assigned to one of the following labels: heading, text block, table, figure and equation. We experimented with various thresholds to achieve best performance. Achieved an accuracy of 80% in labelling the components.   
+                    </p>
+                    <small>
+                        <a href="">[Project Page]</a>
+                        <a href="">[PDF]</a>
+                        <a href="">[Code]</a>
+                    </small>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="figures/doc_anly.png" height="150" width="260">
+                    </center>
+                </div>
+            </div>
             <!-- Document Layout Analysis -->
 
             <!-- Lead Character Recognition in a Movie -->
             <h3>Lead Character Recognition in a Movie</h3>
-            <p>Description</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                         Given a movie, this project detects the protagonists. We make an assumption that the movie revolves around the main characters and screen is occupied by these characters most of the time. All the faces are extracted from the movie using Zhu <i>et al.</i><a href="https://www.ics.uci.edu/~xzhu/face/"></a> face detector instead of OpenCV detector as it performs better in non-frontal face view as well. Appearance representation of each of these faces is represented as Local Binary Pattern (LBP) feature vector. All the faces are clustered with each cluster representing each character in the movie using Hierarchial clustering. Based on number of samples assigned to the clusters, lead characters are chosen.
+                    </p>
+                    <small>
+                        <a href="">[Project Page]</a>
+                        <a href="">[PDF]</a>
+                        <a href="">[Code]</a>
+                    </small>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
             <!-- Lead Character Recognition in a Movie -->
 
             <!-- Search Engine for Wikipedia -->
             <h3>Search Engine for Wikipedia</h3>
-            <p>Description</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                         
+                    </p>
+                    <small>
+                        <a href="">[Project Page]</a>
+                        <a href="">[PDF]</a>
+                        <a href="">[Code]</a>
+                    </small>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
             <!-- Search Engine for Wikipedia -->
 
             <!-- Twitter Entity Disambiguation -->
             <h3>Twitter Entity Disambiguation</h3>
-            <p>Description</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        A major problem in monitoring the online reputation of companies, brands, and other entities is that entity names are often ambiguous (apple may refer to the company, the fruit, the singer, etc.). The problem is particularly hard in microblogging services such as Twitter, where texts are very short and there is little context to disambiguate. In this project, we address the filtering task of determining, out of a set of tweets that contain a company name, which ones do refer to the company. To address this task we studied a large set of features that can be generated to describe the relationship between an entity and a tweet. We explored different learning algorithms as well as, different types of features: text, keyword similarity scores between entities metadata and tweets, Freebase entity graph and Wikipedia. The corpus consists of tweets and a list of 61 entities. For each tweet in the corpus we have the target entity id, the language of the tweet, the timestamp and the tweet id. The content of each URL in the tweets is also provided. The Wikipedia page and home page of the entity are also included.
+                    </p>
+                    <small>
+                        <a href="">[Project Page]</a>
+                        <a href="">[PDF]</a>
+                        <a href="">[Code]</a>
+                    </small>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
             <!-- Twitter Entity Disambiguation -->
 
             <!-- Path Planning for 3 Link Manipulator using Rapidly Exploring Random Tree -->
             <h3>Path Planning for 3 Link Manipulator using Rapidly Exploring Random Tree</h3>
-            <p>Description</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Description</p>
+                    <small>
+                        <a href="">[Project Page]</a>
+                        <a href="">[PDF]</a>
+                        <a href="">[Code]</a>
+                    </small>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
             <!-- Path Planning for 3 Link Manipulator using Rapidly Exploring Random Tree -->
 
             <!-- Course Projects -->
@@ -139,7 +241,18 @@
 
             <!-- Mobile controlled robot -->
             <h3>Mobile controlled robot</h3>
-            <p>Description</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Description</p>
+                    <small>
+                        <a href="">[Project Page]</a>
+                        <a href="">[PDF]</a>
+                        <a href="">[Code]</a>
+                    </small>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
             <!-- Mobile controlled robot -->
 
             <!-- Bachelors Projects -->
