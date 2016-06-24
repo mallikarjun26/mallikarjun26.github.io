@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="personal_website" content="">
+    <meta name="Mallikarjun B R" content="">
+
+    <title>Mallikarjun B R</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/blog-home.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Load Navigation bar -->
+    <script> 
+        $(function(){
+            $("#nav_bar").load("nav.html"); 
+        });
+    </script> 
+
+    <!-- Script to slide photos -->
+    <script>
+        var slideIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none"; 
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1} 
+            x[slideIndex-1].style.display = "block"; 
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div id="nav_bar"> </div>
+    <!-- Navigation bar -->
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            
+            <!-- Photography -->
+            <h2>Photography</h2><hr>
+            <img class="mySlides" src="figures/photography/1.jpg">
+            <img class="mySlides" src="figures/photography/2.jpg">
+            <img class="mySlides" src="figures/photography/3.jpg">
+            <img class="mySlides" src="figures/photography/4.jpg">
+            <img class="mySlides" src="figures/photography/5.jpg">
+            <img class="mySlides" src="figures/photography/6.jpg">
+            <img class="mySlides" src="figures/photography/7.jpg">
+            <img class="mySlides" src="figures/photography/8.jpg">
+            <img class="mySlides" src="figures/photography/9.jpg">
+            <img class="mySlides" src="figures/photography/10.jpg">
+            <img class="mySlides" src="figures/photography/11.jpg">
+            <img class="mySlides" src="figures/photography/12.jpg">
+            <img class="mySlides" src="figures/photography/13.jpg">
+            <img class="mySlides" src="figures/photography/14.jpg">
+            <img class="mySlides" src="figures/photography/15.jpg">
+            <img class="mySlides" src="figures/photography/16.jpg">
+            <img class="mySlides" src="figures/photography/17.jpg">
+            <img class="mySlides" src="figures/photography/18.jpg">
+            <img class="mySlides" src="figures/photography/19.jpg">
+            <img class="mySlides" src="figures/photography/20.jpg">
+            <img class="mySlides" src="figures/photography/21.jpg">
+            <!-- Photography -->
+
+        <div>
+
+    </div>
+    <!-- /.container -->
+
+</body>
+
+</html>
